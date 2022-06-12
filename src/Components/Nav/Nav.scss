@@ -123,6 +123,7 @@
 
   .nav__list {
     position: absolute;
+    z-index: 99;
     top: 96px;
     right: 10px;
     flex-direction: column;

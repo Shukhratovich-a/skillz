@@ -22,29 +22,29 @@ const Nav = () => {
 
         <ul className={`nav__list ${isOpen ? "nav__list--open" : ""}`}>
           <li className="nav__item">
-            <a className="nav__link" href="#link" title="Courses">
+            <Link className="nav__link" to={"/#"} title="Courses">
               Courses
-            </a>
+            </Link>
           </li>
           <li className="nav__item">
-            <a className="nav__link" href="#link" title="Free Workshops">
+            <Link className="nav__link" to={"/#"} title="Free Workshops">
               Free Workshops
-            </a>
+            </Link>
           </li>
           <li className="nav__item">
-            <a className="nav__link" href="#link" title="Blog">
+            <Link className="nav__link" to={"/#"} title="Blog">
               Blog
-            </a>
+            </Link>
           </li>
           <li className="nav__item">
-            <a className="nav__link" href="#link" title="About">
+            <Link className="nav__link" to={"/#"} title="About">
               About
-            </a>
+            </Link>
           </li>
           <li className="nav__item">
-            <a className="nav__link" href="#link" title="Contact">
+            <Link className="nav__link" to={"/#"} title="Contact">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
