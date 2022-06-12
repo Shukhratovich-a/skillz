@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
 
+import useNav from "../../Hooks/useNav";
+
 import Logo from "../Lib/Icons/Logo";
 import Basket from "../Lib/Icons/Basket";
+import Burger from "../Lib/Icons/Burger";
+import Close from "../Lib/Icons/Close";
 
 import "./Nav.scss";
 
 const Nav = () => {
+  const screenWidth = window.innerWidth;
+  const [isOpen, setIsOpen] = useNav();
+
   return (
     <nav className="nav">
       <div className="container">
@@ -13,7 +20,7 @@ const Nav = () => {
           <Logo />
         </Link>
 
-        <ul className="nav__list">
+        <ul className={`nav__list ${isOpen ? "nav__list--open" : ""}`}>
           <li className="nav__item">
             <a className="nav__link" href="#link" title="Courses">
               Courses
@@ -40,6 +47,15 @@ const Nav = () => {
             </a>
           </li>
         </ul>
+
+        {screenWidth <= 768 ? (
+          <button
+            className={`nav__burger ${isOpen ? "nav__burger--open" : ""}`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {!isOpen ? <Burger /> : <Close />}
+          </button>
+        ) : null}
 
         <button className="nav__button">
           <Basket />
