@@ -1,0 +1,17 @@
+@import "../../Scss/Variables.scss";
+
+.header__top {
+  padding: 8px 0;
+  background-color: $green;
+}
+
+.header__top__text {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.header__bottom {
+  background-color: $darkBlue;
+}

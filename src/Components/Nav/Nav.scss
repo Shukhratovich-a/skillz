@@ -1,0 +1,24 @@
+@import "../../Scss/Variables.scss";
+
+.nav {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav__button {
+  position: relative;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: $white;
+}
+
+.nav__button__count{
+  
+}
