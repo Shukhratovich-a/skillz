@@ -20,8 +20,6 @@
 
 .hero__top__text {
   display: block;
-  max-width: 150px;
-  width: 100%;
   margin-bottom: 60px;
   font-size: 16px;
   line-height: 21px;
@@ -31,7 +29,7 @@
   &::after {
     content: "";
     display: block;
-    width: inherit;
+    width: 150px;
     height: 2px;
     margin-top: 7px;
     background-color: $green;
@@ -256,6 +254,11 @@
   .hero__top__text {
     margin: 0 auto;
     margin-bottom: 16px;
+
+    &::after {
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   .hero__heading {
