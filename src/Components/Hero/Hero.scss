@@ -2,6 +2,7 @@
 
 .hero {
   padding-top: 98px;
+  padding-bottom: 100px;
   background-color: $lightBlue;
 
   .container {
@@ -120,7 +121,7 @@
 
 @media only screen and(max-width: 1055px) {
   .hero {
-    padding-top: 60px;
+    padding: 80px 0;
   }
 
   .hero__top__text {
@@ -212,7 +213,7 @@
 
 @media only screen and(max-width: 740px) {
   .hero {
-    padding-top: 40px;
+    padding: 60px 0;
   }
 
   .hero__image {
@@ -224,7 +225,6 @@
 @media only screen and(max-width: 690px) {
   .hero {
     position: relative;
-    padding-bottom: 40px;
     text-align: center;
     background-image: url("../../Assets/Images/HeroImage.png");
     background-position: center;
@@ -242,11 +242,12 @@
       width: 100%;
       height: 100%;
       background-color: $lightBlue;
+      pointer-events: none;
       opacity: 0.7;
     }
   }
 
-  .hero__info{
+  .hero__info {
     z-index: 1;
     max-width: 100%;
     margin: 0;
@@ -281,25 +282,25 @@
 }
 
 @media only screen and(max-width: 425px) {
-  .hero__top__text{
+  .hero__top__text {
     margin-bottom: 12px;
   }
 
-  .hero__heading{
+  .hero__heading {
     max-width: 300px;
     margin-bottom: 12px;
     font-size: 28px;
     line-height: 32px;
   }
 
-  .hero__description{
+  .hero__description {
     max-width: 250px;
     margin-bottom: 12px;
     font-size: 14px;
     line-height: 15px;
   }
 
-  .hero__bottom__text{
+  .hero__bottom__text {
     margin-bottom: 12px;
   }
 }

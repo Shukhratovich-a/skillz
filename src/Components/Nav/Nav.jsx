@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import useNav from "../../Hooks/useNav";
+import useWindowDimensions from "../../Hooks/useWindowDimensions";
 
 import Logo from "../Lib/Icons/Logo";
 import Basket from "../Lib/Icons/Basket";
@@ -10,7 +11,7 @@ import Close from "../Lib/Icons/Close";
 import "./Nav.scss";
 
 const Nav = () => {
-  const screenWidth = window.innerWidth;
+  const screenWidth = useWindowDimensions();
   const [isOpen, setIsOpen] = useNav();
 
   return (
