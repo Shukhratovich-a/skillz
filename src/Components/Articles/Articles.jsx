@@ -1,5 +1,8 @@
 import Button from "../Button/Button";
 
+import FavoritesFourth from "../../Assets/Images/FavoritesFourth.jpg";
+import FavoritesThird from "../../Assets/Images/FavoritesThird.jpg";
+
 import "./Articles.scss";
 
 const Articles = () => {
@@ -20,7 +23,73 @@ const Articles = () => {
 
         <ul className="articles__list">
           <li className="articles__item">
-            
+            <div className="articles__item__wrapper">
+              <img
+                className="articles__item__image"
+                src={FavoritesFourth}
+                alt=""
+                width={390}
+                height={195}
+              />
+
+              <div className="articles__item__inner">
+                <time className="articles__item__time" dateTime="2021-02-08">
+                  February 8, 2021
+                </time>
+
+                <h3 className="articles__item__heading">
+                  The TikTok Algorithm: How to Get the Best Engagement
+                </h3>
+
+                <strong className="articles__item__username">Dianne Russell</strong>
+              </div>
+            </div>
+          </li>
+
+          <li className="articles__item">
+            <div className="articles__item__wrapper">
+              <img
+                className="articles__item__image"
+                src={FavoritesFourth}
+                alt=""
+                width={390}
+                height={195}
+              />
+
+              <div className="articles__item__inner">
+                <time className="articles__item__time" dateTime="2021-02-08">
+                  February 8, 2021
+                </time>
+
+                <h3 className="articles__item__heading">How to Win Friends and Influence People</h3>
+
+                <strong className="articles__item__username">Marvin McKinney</strong>
+              </div>
+            </div>
+          </li>
+
+          <li className="articles__item">
+            <div className="articles__item__wrapper">
+              <img
+                className="articles__item__image"
+                src={FavoritesThird}
+                alt=""
+                width={390}
+                height={195}
+              />
+
+              <div className="articles__item__inner">
+                <time className="articles__item__time" dateTime="2021-01-31">
+                  January 31, 2021
+                </time>
+
+                <h3 className="articles__item__heading">
+                  iPhone Photography: Tips, Tricks, and Best Practices
+                </h3>
+
+                <strong className="articles__item__username">Katie Murphy</strong>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
