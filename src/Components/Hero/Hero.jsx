@@ -19,9 +19,7 @@ const Hero = () => {
 
           <span className="hero__bottom__text">Kathryn Murphy</span>
 
-          <Button className={"hero__button"} path={"/on"}>
-            Learn More
-          </Button>
+          <Button className={"hero__button"}>Learn More</Button>
         </div>
 
         <img className="hero__image" src={HeroImage} alt="hero" width={754} height={725} />
