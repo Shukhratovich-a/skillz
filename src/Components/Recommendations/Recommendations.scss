@@ -1,6 +1,8 @@
 @import "../../Scss/Variables.scss";
 
 .recommendations {
+  background-color: $darkBlue;
+  
   .container {
     display: flex;
     justify-content: center;
@@ -163,7 +165,7 @@
       height: 100%;
       pointer-events: none;
       background-color: $lightBlue;
-      opacity: 0.7;
+      opacity: 0.5;
     }
   }
 

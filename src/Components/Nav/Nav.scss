@@ -111,6 +111,7 @@
     bottom: 20px;
     right: 20px;
     background-color: $green;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     &__count {
       right: calc(0px + 4px + 4px);
@@ -200,7 +201,7 @@
     padding: 5px 10px;
   }
 
-  .nav__link{
+  .nav__link {
     font-size: 16px;
   }
 }
